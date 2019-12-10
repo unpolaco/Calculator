@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kalkulator</title>
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
 </head>
 <body>
   <div class="wrapper">
-      <input type="text" class="score"></input>
+      <input type="text" class="score" autofocus></input>
       
       <div class="calculator-keys">
-          <button class="operator">C</button>
-          <button>+-</button>
-          <button class="percent" >%</button>
+          <button class="operator" id="clear" >C</button>
+          <button class="number" id="coma" >.</button>
+
           <button class='operator' >/</button>
           <button class="number" >7</button>
           <button class="number" >8</button>
@@ -30,7 +30,6 @@
           <button class="number" >2</button>
           <button class="number" >3</button>
           <button class='operator' >+</button>
-          <button id="coma" >.</button>
           <button class="number" >0</button>
           <button class='operator' id="equal">=</button>
           

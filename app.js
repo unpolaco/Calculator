@@ -53,5 +53,14 @@ document.addEventListener('keypress', function (e) {
   // scoreDisplay.value = '';
   if (e.key === 'Enter') {
     scoreDisplay.value = eval(scoreDisplay.value);
+  } else if (e.key === 'ArrowUp') {
+    // insertedNumber = '';
+    // insertedOperator = '';
+    // partialScore.length = 0;
+    scoreDisplay.value = "";
+    console.log("djdgf");
+    
   } 
 });
+
+///check if only numbers and operators
