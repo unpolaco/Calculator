@@ -56,10 +56,6 @@ operators.forEach( operator => {
   })
 })
   
-document.querySelector('#test').addEventListener('click', ()=>{
-  console.log(scoreDisplay.value)
-})
-
 calculatorKeys.addEventListener("mouseenter", ()=> {
   // calculatorKeys.classList.add('.calculator-keys-appear')
   calculatorKeys.style.opacity = "1";
@@ -73,3 +69,16 @@ calculatorKeys.addEventListener("mouseleave", ()=> {
   calculatorKeys.style.transform = 'translateY(-30px)'
 
 })
+
+
+// document.querySelector('#test').addEventListener('click', ()=>{
+//   console.log(scoreDisplay.value)
+// })
+
+document.addEventListener('keypress', function (e) {
+  // scoreDisplay.value = '';
+  
+  if (e.key === 'Enter') {
+    scoreDisplay.value = eval(scoreDisplay.value);
+  } 
+});
