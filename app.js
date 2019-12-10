@@ -4,6 +4,8 @@ const partialScore = [];
 let insertedNumber = "";
 let insertedOperator = "";
 
+const calculatorKeys = document.querySelector('.calculator-keys')
+
 const numbers = [...document.querySelectorAll(".number")];
 const operators = [...document.querySelectorAll(".operator")];
 const scoreDisplay = document.querySelector(".score")
@@ -58,5 +60,16 @@ document.querySelector('#test').addEventListener('click', ()=>{
   console.log(scoreDisplay.value)
 })
 
+calculatorKeys.addEventListener("mouseenter", ()=> {
+  // calculatorKeys.classList.add('.calculator-keys-appear')
+  calculatorKeys.style.opacity = "1";
+  calculatorKeys.style.transform = 'translateY(0)';
+  
+})
 
+calculatorKeys.addEventListener("mouseleave", ()=> {
+  // calculatorKeys.classList.add('.calculator-keys-appear')
+  calculatorKeys.style.opacity = "0";
+  calculatorKeys.style.transform = 'translateY(-30px)'
 
+})
